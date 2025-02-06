@@ -1,8 +1,11 @@
+const postsList = require('../data/posts')
+
+
 // Index
 
 const index = (req, res) => {
 
-    res.send('Index, lista dei post');
+    res.json(postsList);
 
 }
 
@@ -11,7 +14,19 @@ const index = (req, res) => {
 
 const show = (req, res) => {
 
-    res.send('Dettagli dei post');
+    const id = parseInt(req.params.id);
+
+    const post = postsList.find(post => post.id === id);
+
+    if (!post) {
+
+        res.status(404);
+
+        return res.json('404 Post Not found');
+
+    }
+
+    res.json(post);
 
 }
 
