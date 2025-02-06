@@ -62,8 +62,22 @@ const modify = (req, res) => {
 
 const destroy = (req, res) => {
 
-    res.send("Eliminazione del post");
+    const id = parseInt(req.params.id);
 
+    const post = postsList.find(post => post.id === id);
+
+    if (!post) {
+
+        res.status(404);
+
+        return res.json('404 Post Not found');
+
+    }
+
+    postsList.splice(postsList.indexOf(post), 1);
+
+    res.status(200).json({ message: 'Post cancellato con successo!' });
+    
 }
 
 
