@@ -7,7 +7,7 @@ const postRoutes = require('./routes/postroutes');
 // Middlewares 
 
 app.use(express.static('public'));
-app.use("/postroutes", postRoutes);
+app.use("/route", postRoutes);
 
 
 app.get('/', (req, res) => {

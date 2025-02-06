@@ -31,7 +31,7 @@ router.post('/', (req, res) => {
 
 // Update
 
-router.post('/', (req, res) => {
+router.post('/:id', (req, res) => {
 
     res.send('Modifica integrale del post');
 
