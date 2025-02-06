@@ -76,8 +76,12 @@ const destroy = (req, res) => {
 
     postsList.splice(postsList.indexOf(post), 1);
 
-    res.status(200).json({ message: 'Post cancellato con successo!' });
-    
+    console.log(postsList);
+
+    res.json('Post cancellato con successo!');
+
+    res.status(204);
+
 }
 
 
