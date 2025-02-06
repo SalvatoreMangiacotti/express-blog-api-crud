@@ -11,10 +11,10 @@ app.use("/route", postRoutes);
 
 
 app.get('/', (req, res) => {
-  res.send('Server del mio blog');
+    res.send('Server del mio blog');
 })
 
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+    console.log(`Example app listening on port ${port}`)
 })
