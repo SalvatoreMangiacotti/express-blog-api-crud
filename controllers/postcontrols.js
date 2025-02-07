@@ -35,6 +35,10 @@ const show = (req, res) => {
 
 const store = (req, res) => {
 
+    // const postsListIndex = postsList[postsList.length - 1];
+    // const postId = postsListIndex.id;
+    // const newId = postId + 1;
+    
     const newId = postsList[postsList.length - 1].id + 1;
 
     const newPost = {
