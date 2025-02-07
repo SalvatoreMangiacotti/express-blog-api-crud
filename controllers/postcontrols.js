@@ -38,7 +38,7 @@ const store = (req, res) => {
     // const postsListIndex = postsList[postsList.length - 1];
     // const postId = postsListIndex.id;
     // const newId = postId + 1;
-    
+
     const newId = postsList[postsList.length - 1].id + 1;
 
     const newPost = {
@@ -66,7 +66,27 @@ const store = (req, res) => {
 
 const update = (req, res) => {
 
-    res.send('Modifica integrale del post');
+    const id = parseInt(req.params.id);
+
+    const post = postsList.find(post => post.id === id);
+
+    if (!post) {
+
+        res.status(404);
+
+        return res.json('404 Post Not found');
+
+    }
+
+    req.body.title ? post.title = req.body.title : post.title = post.title;
+    req.body.slug ? post.slug = req.body.slug : post.slug = post.slug;
+    req.body.content ? post.content = req.body.content : post.content = post.content;
+    req.body.image ? post.image = req.body.image : post.image = post.image;
+    req.body.tags ? post.tags = req.body.tags : post.tags = post.tags;
+
+    console.log(postsList);
+
+    res.json(post);
 
 }
 
