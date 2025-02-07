@@ -7,6 +7,10 @@ const index = (req, res) => {
 
     res.json(postsList);
 
+    const dessertFilter = postsList.filter((post) => post.tags.includes('Dolci'));
+
+    console.log(dessertFilter);
+
 }
 
 
