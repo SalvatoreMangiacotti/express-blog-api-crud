@@ -78,11 +78,11 @@ const update = (req, res) => {
 
     }
 
-    req.body.title ? post.title = req.body.title : post.title = post.title;
-    req.body.slug ? post.slug = req.body.slug : post.slug = post.slug;
-    req.body.content ? post.content = req.body.content : post.content = post.content;
-    req.body.image ? post.image = req.body.image : post.image = post.image;
-    req.body.tags ? post.tags = req.body.tags : post.tags = post.tags;
+    post.title = req.body.title ? req.body.title : post.title;
+    post.slug = req.body.slug ? req.body.slug : post.slug;
+    post.content = req.body.content ? req.body.slug : post.content;
+    post.image = req.body.image ? req.body.image : post.image;
+    post.tags = req.body.tags ? req.body.tags : post.tags;
 
     console.log(postsList);
 
