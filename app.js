@@ -4,6 +4,7 @@ const port = 3000;
 const postRoutes = require('./routes/postroutes');
 const errorsHandler = require('./middlewares/errorsHandler');
 const notFound = require('./middlewares/notFound');
+var cors = require('cors')
 
 
 // Middlewares 
@@ -11,6 +12,9 @@ const notFound = require('./middlewares/notFound');
 app.use(express.static('public'));
 app.use(express.json());
 
+// CORS module
+
+app.use(cors({ origin: 'http://localhost:5173/' }))
 
 app.get('/', (req, res) => {
     res.send('Server del mio blog');
