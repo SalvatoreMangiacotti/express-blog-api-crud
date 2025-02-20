@@ -4,7 +4,7 @@ const port = 3000;
 const postRoutes = require('./routes/postroutes');
 const errorsHandler = require('./middlewares/errorsHandler');
 const notFound = require('./middlewares/notFound');
-var cors = require('cors')
+const cors = require('cors');
 
 
 // Middlewares 
