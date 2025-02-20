@@ -18,7 +18,7 @@ const posts = [
         questa soffice delizia profumata e invitante. E per una volta sarà la nonna a farvi i complimenti
         per aver preparato un morbido ciambellone, così buono che non passa mai di moda!`,
 
-        image: "ciambellone.jpeg",
+        image: "http://localhost:3000/img/ciambellone.jpeg",
 
         tags: ["Dolci", "Torte", "Ricette vegetariane", "Ricette al forno"]
 
@@ -43,7 +43,7 @@ const posts = [
         Cracker allo zafferano
         Cracker ai semi`,
 
-        image: "cracker_barbabietola.jpeg",
+        image: "http://localhost:3000/img/cracker_barbabietola.jpeg",
 
         tags: ["Antipasti", "Ricette vegetariane", "Ricette al forno"]
 
@@ -66,7 +66,7 @@ const posts = [
         Gnocchi di barbabietola
         Tagliatelle alla barbabietola con asparagi`,
 
-        image: "pasta_barbabietola.jpeg",
+        image: "http://localhost:3000/img/pasta_barbabietola.jpeg",
 
         tags: ["Primi piatti", "Ricette vegetariane"]
 
@@ -85,7 +85,7 @@ const posts = [
         dolce vi riporterà con la mente ai sapori dell'infanzia… gustatelo da solo o accompagnatelo con frutta fresca e yogurt per uno spuntino
         tanto goloso quanto genuino!`,
 
-        image: "pane_fritto_dolce.jpeg",
+        image: "http://localhost:3000/img/pane_fritto_dolce.jpeg",
 
         tags: ["Dolci", "Dolci veloci", "Ricette veloci", "Ricette vegetariane"]
 
@@ -105,7 +105,7 @@ const posts = [
         l'aggiunta di cacao e amaretti: perfetta da gustare per una merenda dal sapore rustico, la torta paesana è un perfetto dolce di recupero quando si ha del pane avanzato…
         ed è ancora più buona il giorno dopo!`,
 
-        image: "torta_paesana.jpeg",
+        image: "http://localhost:3000/img/torta_paesana.jpeg",
 
         tags: ["Dolci", "Dolci al cioccolato", "Torte", "Ricette vegetariane", "Ricette al forno"]
 
