@@ -18,9 +18,11 @@ const index = (req, res) => {
 
 const show = (req, res) => {
 
-    throw new Error('Error test');
+    // throw new Error('Error test');
 
     const id = parseInt(req.params.id);
+
+    // return (res.json(id))
 
     const post = postsList.find(post => post.id === id);
 

@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
 app.use("/route", postRoutes);
 
 
-app.use(notFound);
+// app.use(notFound);
 
 
 // Global Level
